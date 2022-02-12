@@ -20,7 +20,9 @@ export default function PaginationButtons() {
       )}
 
       <Link
-        href={`/search?query=${router.query.query}&start=${startIndex + 10}`}
+        href={`/search?query=${router.query.query}&type=${
+          router.query.type
+        }&start=${startIndex + 10}`}
       >
         <div className="flex flex-grow cursor-pointer flex-col items-center hover:underline">
           <MdKeyboardArrowRight className="h-5 w-5" />
