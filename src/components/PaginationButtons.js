@@ -8,7 +8,9 @@ export default function PaginationButtons() {
     <div className="flex max-w-lg justify-between pb-10 text-blue-700">
       {startIndex >= 10 && (
         <Link
-          href={`/search?query=${router.query.query}&start=${startIndex - 10}`}
+          href={`/search?query=${router.query.query}&type=${
+            router.query.type
+          }&start=${startIndex - 10}`}
         >
           <div className="flex flex-grow cursor-pointer flex-col items-center hover:underline">
             <MdKeyboardArrowLeft className="h-5 w-5" />
